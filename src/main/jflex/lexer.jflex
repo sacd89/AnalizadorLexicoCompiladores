@@ -16,8 +16,8 @@ import java.util.List;
         try{
             in = new FileReader(archivo);
             Lexer lex = new Lexer(in);
-            while(!lexer.zzAtEOF){
-            lexer.yylex();
+            while(!lex.zzAtEOF){
+            lex.yylex();
             }
         }catch(Exception ex){
             System.out.println("Error al analizar el archivo.");
